@@ -5,6 +5,7 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
+  TouchSensor,
 } from "@dnd-kit/core";
 import {
   SortableContext,
@@ -17,7 +18,15 @@ import SortableCard from "./SortableCard";
 
 export default function Itinerary() {
   const [items, setItems] = useState(itineraryData);
-  const sensors = useSensors(useSensor(PointerSensor));
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 150,
+        tolerance: 5,
+      },
+    })
+  );
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
