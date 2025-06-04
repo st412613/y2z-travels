@@ -1,0 +1,48 @@
+export const itineraryData = [
+  {
+    id: "india_gate",
+    order: 1,
+    title: "India Gate",
+    image: "https://ik.imagekit.io/d4dzvzfjn/IndiaGate.jpg?updatedAt=1749015810829",
+    description:
+      "India Gate is a war memorial located in New Delhi, along the Rajpath. It is dedicated to the 82,000 soldiers, both Indian and Britsh.",
+    rating: 4.6,
+    reviews: 281124,
+  },
+  {
+    id: "red_fort",
+    order: 2,
+    title: "Red Fort",
+    image: "https://ik.imagekit.io/d4dzvzfjn/redFort.jpg?updatedAt=1749015810956",
+    description: "The Red Fort is a historical fort in old Delhi on the bank of yamuna.",
+    rating: 4.5,
+    reviews: 168729,
+  },
+  {
+    id: "qutub_minar",
+    order: 3,
+    title: "Qutub Minar",
+    image: "https://ik.imagekit.io/d4dzvzfjn/qutubMinar.jpg?updatedAt=1749015810868",
+    description: "Qutub Minar is a Minaret or a victory tower in Qutub complex, a UNESCO World Heritage Site in Delhi's Mehrauli area.",
+    rating: 4.5,
+    reviews: 151556,
+  },
+  {
+    id: "lotus_temple",
+    order: 4,
+    title: "Lotus Temple",
+    image: "https://ik.imagekit.io/d4dzvzfjn/Lotus%20temple.jpg?updatedAt=1749015810936",
+    description: "Lotus-shaped temple located in the national capital of New Delhi ia an edifice dedicated to the Baháʼí faith.",
+    rating: 4.5,
+    reviews: 67772,
+  },
+  {
+    id: "humayun_tomb",
+    order: 5,
+    title: "Humayun’s tomb",
+    image: "https://ik.imagekit.io/d4dzvzfjn/humayuTomb.jpg?updatedAt=1749015811048",
+    description: "Humayun's Tomb is the final resting place of the Mughal Emperor Humayun in Delhi.",
+    rating: 4.5,
+    reviews: 46024,
+  },
+];
