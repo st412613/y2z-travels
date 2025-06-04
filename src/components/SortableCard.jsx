@@ -27,8 +27,8 @@ export default function SortableCard({ item }) {
       ref={setNodeRef}
       {...attributes}
       {...listeners}
-      style={style}
-      className=" bg-white shadow-md rounded-xl p-2 md:p-4 mb-4 flex flex-col gap-1 md:gap-3 cursor-grab active:cursor-grabbing"
+      style={{ ...style, touchAction: "none" }}
+      className="bg-white shadow-md rounded-xl p-2 md:p-4 mb-4 flex flex-col gap-1 md:gap-3 cursor-grab active:cursor-grabbing"
     >
       <div className="flex gap-3 items-start">
         <div className="text-black-400 pt-1 m-auto md:pt-1">

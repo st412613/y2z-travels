@@ -18,15 +18,7 @@ import SortableCard from "./SortableCard";
 
 export default function Itinerary() {
   const [items, setItems] = useState(itineraryData);
-  const sensors = useSensors(
-    useSensor(PointerSensor),
-    useSensor(TouchSensor, {
-      activationConstraint: {
-        delay: 150,
-        tolerance: 5,
-      },
-    })
-  );
+  const sensors = useSensors(useSensor(PointerSensor), useSensor(TouchSensor));
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
